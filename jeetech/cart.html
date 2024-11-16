@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css"> <!-- Link to CSS for styling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div id="cartContainer"></div>
+    <div id="totalAmount"></div>
+    <button id="placeOrderButton" onclick="placeOrder()">Place Order</button>
+    <br>
+<!-- Customer Details Popup -->
+<div id="customerPopup" class="popup">
+    <div class="popup-content">
+        <h2>Customer Details</h2>
+        <form id="customerForm">
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+
+            <label for="customerAddress">Address:</label>
+            <textarea id="customerAddress" placeholder="Enter your address" required></textarea>
+
+            <label for="customerContact">Contact No:</label>
+            <input type="tel" id="customerContact" placeholder="Enter your contact number" required>
+
+            <div class="popup-buttons">
+                <button type="button" onclick="submitOrder()">Submit</button>
+                <button type="button" onclick="closePopup()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <button id="backButton" onclick="goBack()">Go Back</button>
+    <script src="cart.js"></script>
+
+    
+</body>
+</html>

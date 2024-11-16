@@ -1,0 +1,201 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #33333371, #424652); /* Darker gradient background */
+    color: #f0f0f0; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cart container */
+#cartContainer {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    background-color: #222; /* Dark background for cart container */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1); /* Light shadow */
+}
+
+/* Cart item styling */
+.cart-item {
+    background-color: #333; /* Dark item background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: italic;
+    color: #f0f0f0; /* Light color for heading */
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15); /* Lighter shadow on hover */
+}
+
+/* Cart image styling */
+.cart-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.cart-image:hover {
+    transform: scale(1.1);
+}
+
+/* Cart item text content */
+.cart-item h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #f0f0f0; /* Light color for item title */
+}
+
+.cart-item p {
+    margin: 5px 0;
+    color: #ccc; /* Light gray for item description */
+}
+
+/* Quantity controls */
+.cart-item button {
+    background-color: #444; /* Dark button background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cart-item button:hover {
+    background-color: #666; /* Lighter button on hover */
+}
+
+.cart-item button:active {
+    background-color: #888; /* Darker button on click */
+}
+
+/* Total amount styling */
+#totalAmount {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f0f0f0; /* Light color for total amount */
+    text-align: right;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Place Order button */
+button {
+    background-color: #0b0c0d; /* Button color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #3a3b45; /* Darker button on hover */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Light shadow on hover */
+}
+
+button:active {
+    background-color: #333a9e; /* Darker button on click */
+    box-shadow: none;
+}
+
+/* Fade-in animation for cart items */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cart-item {
+    animation: fadeIn 0.5s ease-in-out;
+}
+/* Popup Overlay */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+    margin: 0 0 15px;
+}
+
+.popup-content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-buttons {
+    text-align: right;
+}
+
+.popup-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-buttons button:hover {
+    background-color: #45a049;
+}
