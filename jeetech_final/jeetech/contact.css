@@ -1,0 +1,126 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #222, #fff); /* Black and white gradient */
+    color: #fff; /* Default text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Banner */
+.contact-banner {
+    background: #333; /* Dark background for banner */
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.contact-banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-banner p {
+    font-size: 1.5em;
+}
+
+/* Contact Form */
+.contact-container {
+    background: #fff; /* White background for form */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    color: #333; /* Dark text for input fields */
+}
+
+input:focus, textarea:focus {
+    border-color: #0072ff; /* Change border color on focus */
+    outline: none;
+    background-color: #f0f0f0; /* Light gray background on focus */
+    box-shadow: 0 0 5px rgba(0, 114, 255, 0.5); /* Light blue shadow on focus */
+}
+
+label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #aaa;
+    transition: all 0.3s;
+}
+
+input:focus + label,
+textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #0072ff;
+}
+
+button {
+    background: #7d8289; /* Blue background for button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background: #020305; /* Darker blue on hover */
+    transform: translateY(-3px) scale(1.05); /* Lift effect and scale on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    color: #030303; /* White color for info heading */
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #080505; /* Light gray for info text */
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #000000; /* Blue for icons */
+}

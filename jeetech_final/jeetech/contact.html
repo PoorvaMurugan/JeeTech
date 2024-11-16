@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="contact-section">
+        <div class="contact-banner">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you! Fill out the form below to reach out.</p>
+        </div>
+
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="2acb3512-8204-4151-b826-777dd5912aca">
+
+                <!-- Form Inputs -->
+                <input type="text" name="full_name" placeholder="Your Name" required>
+                <input type="email" name="email_address" placeholder="Your Email" required>
+                <textarea name="user_message" placeholder="Your Message" required></textarea>
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <!-- Custom Confirmation / Success Page -->
+                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><i class="fas fa-phone-alt"></i> 63824 92042</p>
+            <p><i class="fas fa-envelope"></i> jeetech@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 41/12 Vellala Street, Ayanavaram, Near Gopi Krishna Theater, Chennai, Tamil Nadu, India - 600023</p>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

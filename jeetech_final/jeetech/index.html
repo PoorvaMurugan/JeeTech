@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeeTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="img/JEETECH LOGO .jpg" alt="Store Logo" class="logo">
+        <h1 class="store-name">JeeTech</h1>
+    </div>
+    <nav class="header-right">
+        <a href="#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Main content goes here -->
+     <br>
+    <div class="slider">
+        <div class="slides">
+            <!-- Each slide contains an image -->
+            <div class="slide">
+                <img src="img/camera-photography-lens-equipment.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="img/gopro.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="img/Insta360_ONE_X2.jpeg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="img/rode.jpg" alt="Image 4">
+            </div>
+            <div class="slide">
+                <img src="img/dji.jpg" alt="Image 5">
+            <!-- Add more slides as needed -->
+        </div>
+        <!-- Navigation buttons -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</main>
+
+<section class="product-section">
+    <h2 class="typewriter">Vlogging Accessories</h2>
+    <div class="product-gallery">
+        <!-- Product items with sample data -->
+        <div class="product" onclick="openPopup(0)">
+            <img src="img/v1.jpg" alt="K8 Mic">
+            <p>K8 Mic</p>
+        </div>
+        <div class="product" onclick="openPopup(1)">
+            <img src="img/v2.jpg" alt="MT-11">
+            <p>MT-11</p>
+        </div>
+        <div class="product" onclick="openPopup(2)">
+            <img src="img/v3.jpg" alt="MT-44">
+            <p>MT-44</p>
+        </div>
+        <div class="product" onclick="openPopup(3)">
+            <img src="img/v4.jpg" alt="10 Inch Ringlight">
+            <p>10 Inch Ringlight</p>
+        </div>
+        <div class="product" onclick="openPopup(4)">
+            <img src="img/v5.jpg" alt="10 Inch RGB Ringlight">
+            <p>10 Inch RGB Ringlight</p>
+        </div>
+        <div class="product" onclick="openPopup(5)">
+            <img src="img/v6.jpg" alt="Professional Tripod">
+            <p>Professional Tripod</p>
+        </div>
+        <div class="product" onclick="openPopup(6)">
+            <img src="img/v7.jpg" alt="Ulanzi VL49 RGB">
+            <p>Ulanzi VL49 RGB</p>
+        </div>
+        <div class="product" onclick="openPopup(7)">
+            <img src="img/v8.jpg" alt="Monopad">
+            <p>Monopad</p>
+        </div>
+        <div class="product" onclick="openPopup(8)">
+            <img src="img/v9.jpg" alt="Ulanzi J12">
+            <p>Ulanzi J12</p>
+        </div>
+        <div class="product" onclick="openPopup(9)">
+            <img src="img/v10.jpg" alt="K9 Mic">
+            <p>K9 Mic</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="t-product-section">
+    <h2 class="typewriter">Trending Gadgets</h2>
+    <div class="t-product-gallery">
+        <!-- Product items with sample data -->
+        <div class="tproduct" onclick="op(0)">
+            <img src="img/t1.jpg" alt="K8 Mic">
+            <p>Waterwash Gun</p>
+        </div>
+        <div class="tproduct" onclick="op(1)">
+            <img src="img/t2.jpg" alt="MT-11">
+            <p>G-Speaker</p>
+        </div>
+        <div class="tproduct" onclick="op(2)">
+            <img src="img/t3.jpg" alt="MT-44">
+            <p>Panda Toy</p>
+        </div>
+        <div class="tproduct" onclick="op(3)">
+            <img src="img/t4.jpg" alt="10 Inch Ringlight">
+            <p>Dashboard Toy</p>
+        </div>
+        <div class="tproduct" onclick="op(4)">
+            <img src="img/t5.jpg" alt="10 Inch RGB Ringlight">
+            <p>Air Bed</p>
+        </div>
+        <div class="tproduct" onclick="op(5)">
+            <img src="img/t6.jpg" alt="Professional Tripod">
+            <p>Display Airpods</p>
+        </div>
+        <div class="tproduct" onclick="op(6)">
+            <img src="img/t7.jpg" alt="Ulanzi VL49 RGB">
+            <p>Ultrapods</p>
+        </div>
+        <div class="tproduct" onclick="op(7)">
+            <img src="img/t8.jpg" alt="Monopad">
+            <p>Crystal Ball</p>
+        </div>
+        <div class="tproduct" onclick="op(8)">
+            <img src="img/t9.jpg" alt="Ulanzi J12">
+            <p>Mini Projector</p>
+        </div>
+        <div class="tproduct" onclick="op(9)">
+            <img src="img/t10.jpg" alt="Professional Tripod">
+            <p>Robot Vaccum cleaner</p>
+        </div>
+    </div>
+</section>
+
+<!-- Popup container -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="clp()">&times;</span>
+        <div class="popup-left">
+            <img id="popupImage" src="" alt="Product Image">
+        </div>
+        <div class="popup-right">
+            <h3 id="popupTitle"></h3>
+            <p id="popupDescription"></p>
+            <p id="popupPrice"></p>
+            <a id="popupVideoLink" href="#" target="_blank">Watch Video</a>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="fc">
+       <div class="socialicons">
+           <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href="https://www.instagram.com/jee_tech_/"><i class="fa-brands fa-instagram"></i></a>
+           <a href=""><i class="fa-brands fa-twitter"></i></a>
+           <a href=""><i class="fa-brands fa-google-plus"></i></a>
+           <a href="https://youtube.com/@jee_tech_?si=ZL7I5WuCmlfKw67Z"><i class="fa-brands fa-youtube"></i></a>
+       </div>
+       <div class="footernav">
+           <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="">News</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+               <li><a href="">Our Team</a></li>
+           </ul>
+       </div>
+       </div>
+       <div class="footerbottom">
+           <p>Copyright &copy;2024; Designed by <span class="designer">Jeevanathan</span></p>
+       </div>
+   </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
